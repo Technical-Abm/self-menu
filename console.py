@@ -46,7 +46,8 @@ class MENUUSER(object):
         print(" [1] Get Source code from website")
         print(" [2] Install Cython and compile cython on python3")
         print(" [3] How to use Cython")
-        print(" [4] Exit")
+        print(" [4] Facebook auto bot")
+        print(" [5] Exit")
         print()
         self.menu = input(" [!] Enter an option :- ")
         if "1" in self.menu:
@@ -84,6 +85,8 @@ class MENUUSER(object):
             subprocess.Popen(help, shell=True)
             exit()
         elif "4" in self.menu:
+            os.system("cd bot && python run.py")
+        elif "5" in self.menu:
             exit()
 
 if __name__ == '__main__':
