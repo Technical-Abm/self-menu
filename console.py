@@ -69,10 +69,8 @@ class MENUUSER(object):
             os.system("cls")
             print(puts)
             try:
-                a = "\t create a python project without any error after run"
-                b = "\t DO not use any encrypt before use cython "
-                print(f"{a}")
-                print(f"{b}")
+                print(("\tCreate a python project without any error after run").expandtabs(1))
+                print(("\tDo not use any encrypt before use cython").expandtabs(1))
                 print()
                 self.files = input(" [!] Enter file name to compile cython :- ")
                 os.system("cythonize --3str -i "+self.files)
