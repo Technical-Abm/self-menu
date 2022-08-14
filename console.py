@@ -81,8 +81,10 @@ class MENUUSER(object):
         elif "3" in self.menu:
             os.system("cls")
             print(puts)
-            help = "cython --help"
-            subprocess.Popen(help, shell=True)
+            self.detailed = [];
+            self.help = "cython --help"
+            self.detailed.append(self.help)
+            subprocess.Popen(self.detailed, shell=True)
             exit()
         elif "4" in self.menu:
             os.system("cd bot && python run.py")
