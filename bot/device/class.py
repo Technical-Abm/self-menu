@@ -1,1 +1,2 @@
-import bot as class;class.Login_Selfi()
+import bot as real
+real.Login_selfi()
